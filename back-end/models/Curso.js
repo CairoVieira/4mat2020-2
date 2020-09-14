@@ -5,7 +5,7 @@ const esquema = mongoose.Schema({
         type: String,
         required: true // Atributo obrigatório
     },
-    cara_horaria: {
+    carga_horaria: {
         type: Number,
         required: true,
         min: 4,
