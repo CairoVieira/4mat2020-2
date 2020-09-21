@@ -23,7 +23,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-
 //Criação de uma nova rota
 const teste = require('./routes/teste')
 app.use('/teste', teste)
@@ -31,5 +30,13 @@ app.use('/teste', teste)
 // Rota para curso
 const curso = require('./routes/curso')
 app.use('/curso', curso)
+
+// Rota para professor
+const professor = require('./routes/professor')
+app.use('/professor', professor)
+
+// Rota para sala-aula
+const sala_aula= require('./routes/sala_aula')
+app.use('/sala-aula', sala_aula)
 
 module.exports = app;
