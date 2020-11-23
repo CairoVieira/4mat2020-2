@@ -44,7 +44,6 @@ app.use('/sala-aula', sala_aula)
 
 // Rota para turma
 const turma = require('./routes/turma')
-app.use('turma', turma)
-
+app.use('/turma', turma)
 
 module.exports = app;
